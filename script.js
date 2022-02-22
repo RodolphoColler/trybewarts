@@ -38,7 +38,7 @@ function saveCheckbox() {
     usercheckbox.push(` ${checkbox[index].value}`);
   }
   const p = document.createElement('p');
-  p.innerText = `Matérias: ${usercheckbox}`;
+  p.innerText = `Technology: ${usercheckbox}`;
   return p;
 }
 
@@ -46,7 +46,7 @@ function saveRadio() {
   const radio = document.querySelector('input[name="rate"]:checked');
   const userRadio = radio.value;
   const p = document.createElement('p');
-  p.innerText = `Avaliação: ${userRadio}`;
+  p.innerText = `Rate: ${userRadio}`;
   return p;
 }
 
@@ -54,7 +54,7 @@ function saveFront() {
   const front = document.querySelector('input[name="family"]:checked');
   const userFront = front.value;
   const p = document.createElement('p');
-  p.innerText = `Família: ${userFront}`;
+  p.innerText = `Family: ${userFront}`;
   return p;
 }
 
@@ -62,7 +62,7 @@ function saveHouse() {
   const house = document.querySelector('select');
   const userHouse = house.value;
   const p = document.createElement('p');
-  p.innerText = `Casa: ${userHouse}`;
+  p.innerText = `House: ${userHouse}`;
   return p;
 }
 
@@ -70,7 +70,7 @@ function saveDescription() {
   const description = document.getElementById('textarea');
   const userDescription = description.value;
   const p = document.createElement('p');
-  p.innerText = `Observações: ${userDescription}`;
+  p.innerText = `Comment: ${userDescription}`;
   return p;
 }
 
@@ -84,7 +84,7 @@ submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   const userName = `${name.value} ${lastname.value}`;
   const pUserName = document.createElement('p');
-  pUserName.innerText = `Nome: ${userName}`;
+  pUserName.innerText = `Name: ${userName}`;
   const userEmail = email.value;
   const pEmail = document.createElement('p');
   pEmail.innerText = `Email: ${userEmail}`;
